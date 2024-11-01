@@ -17,7 +17,7 @@ def reply(chat_id, text):
 
 
 def notify_progress(secs_left, chat_id):
-    bot.send_message(chat_id, "Осталось секунд: {}".format(secs_left))
+    bot.send_message(chat_id, "Осталось {} секунд".format(secs_left))
 
 
 def answer(chat_id):
