@@ -4,6 +4,9 @@ import os
 from pytimeparse import parse
 from dotenv import load_dotenv
 
+TG_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TG_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
 
 def render_progressbar(total, iteration, prefix='', suffix='', length=30, fill='█', zfill='░'):
     iteration = min(total, iteration)
